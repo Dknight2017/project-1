@@ -11,6 +11,7 @@ var timerInterval;
 var score = 0
 var player1Score = null
 var player2Score = null
+var currentPlayer = null
 // platform.css( {background: "green"})
 
 //Being Game Function 
@@ -20,6 +21,7 @@ $("#StartButton").click(function(){
     // $("#IntroScreen").hide();
     $("#gameBoard").show();
     startTimer($timer)
+    createRubies()
 });
 
 $(document).keydown(function(e){
@@ -40,12 +42,16 @@ $(document).keydown(function(e){
         
     }
 });
+function clearBoard() {
+    $gameBoard.html('')
+}
 function createRubies() {
     for (var i = 0; i < 10; i++) {
         $gameBoard.append('<div class="ruby" id="ruby' + i + '"><img class="ruby-image" src="New Piskel (1).gif"></div>')
     }
 }
-createRubies()
+
+// createRubies()
 // Animate Rubies
 function animateRuby(ruby) {
     setInterval(function(){
@@ -73,10 +79,22 @@ for(var i = 0; i < $('.skull').length; i ++) {
     animateSkull($('.skull').eq(i))
 }
 
+function setCurrentPlayer() {
+    if(currentPlayer == null) {
+        currentPlayer = 'player1'
+    } else {
+        currentPlayer = 'player2'
+    }
+}
+
 function startTimer(display) {
+    setCurrentPlayer()
+    console.log("Current Player:", currentPlayer)
     timerInterval = setInterval(function(){
         if (timer <= 0) {
             clearInterval(timerInterval)
+            clearBoard()
+            backgroundSong.pause()
             console.log("Game over...")
             // make sure we assign the score to the right player:
             if(player1Score === null) {
@@ -95,12 +113,21 @@ function startTimer(display) {
 
 
     
- $('.ruby').on('click', function() {
-     console.log("You got a ruby.")
-     $(this).hide()
-     score = score + 150
-     console.log("The score is now " + score)
-     $("#score").text( score + " points")
+//  $('.ruby').on('click', function() {
+//      console.log("You got a ruby.")
+//      $(this).hide()
+//      score = score + 150
+//      console.log("The score is now " + score)
+//      $("#score").text( score + " points")
+// })
+
+//event delegation
+$('#gameBoard').on('click', '.ruby', function() {
+    console.log("You got a ruby.")
+    $(this).hide()
+    score = score + 150
+    console.log("The score is now " + score)
+    $("#score").text( score + " points")
 })
 
 $('.skull').on('click', function() {

@@ -24,6 +24,7 @@ body {
     background-image: url("../big_1406283102_image.jpg");
     background-repeat: no-repeat;
     background-size: 1500px 800px;
+    /* background-size: 100%; */
     background-color: black;
 }
 #gameBoard{
