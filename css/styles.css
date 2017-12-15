@@ -1,0 +1,216 @@
+#score {
+    height: 70px;
+    width: 200px;
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    border: solid white;
+    
+}
+#timer {
+    height: 70px;
+    width: 200px;
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    position: fixed; 
+    border: solid white;
+}
+body {
+    background-image: url("../big_1406283102_image.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
+    background-color: black;
+}
+#gameBoard{
+    height: 400px;
+    width: 100%;
+    display:none;
+}
+
+.ground {
+    height: 300px;
+    width: 1500px;
+}
+#platform {
+    height: 500px;
+    width: 150px;
+}
+
+.tommy {
+    height: 250px;
+    width: 250px;
+}
+
+#tommy {
+    position: static;
+    left: 600px;
+    height: 30px;
+    width: 30px;
+}
+.skull{
+    height: 50px;
+    width: 50px;
+}
+
+.ruby{
+    height: 500px;
+    width: 500px;
+}
+
+#skull {
+    position: absolute;
+    left: 150px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#skull2 {
+    position: absolute;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#skull3 {
+    position: absolute;
+    left: 350px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#skull4 {
+    position: absolute;
+    left: 450px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#skull5 {
+    position: absolute;
+    left: 550px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#skull6 {
+    position: absolute;
+    left: 650px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#skull7 {
+    position: absolute;
+    left: 750px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#skull8 {
+    position: absolute;
+    left: 850px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#skull9 {
+    position: absolute;
+    left: 950px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#skull10 {
+    position: absolute;
+    left: 1050px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#ruby0 {
+    position: absolute;
+    left: 100px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+#ruby1 {
+    position: absolute;
+    left: 200px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+#ruby2 {
+    position: relative;
+    left: 300px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+#ruby3 {
+    position: relative;
+    left: 400px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+#ruby4 {
+    position: relative;
+    left: 500px;
+    height: 50px;
+    width: 50px;
+    color: red;
+}
+#ruby5 {
+    position: relative;
+    left: 600px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+#ruby6 {
+    position: relative;
+    left: 700px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+#ruby7 {
+    position: relative;
+    left: 800px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+
+#ruby8 {
+    position: relative;
+    left: 900px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+#ruby9 {
+    position: relative;
+    left: 1000px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+#ruby10 {
+    position: relative;
+    left: 1100px;
+    height: 120px;
+    width: 120px;
+    color: red;
+}
+
+.ruby-image {
+    width: 100%
+}
